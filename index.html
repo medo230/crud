@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="js/main.js" />
+</head>
+
+<body class="bg-light">
+
+
+  <h1 class="text-primary text-center p-5">our products</h1>
+  <div class="container py-5 ">
+
+    <div class="form-group">
+      <label for="ProductNameInput">ProductName :</label>
+      <input type="text" class="form-control" id="ProductNameInput">
+
+      <div id="productNameAlert" class="alert alert-danger d-none ">
+        <p>user must start with UpparCase and Then 3 to 8 leeter samall</p>
+      </div>
+
+
+
+    </div>
+    <div class="form-group">
+      <label for="productPriceInput">proudactPrice :</label>
+      <input type="number" class="form-control" id="productPriceInput">
+    </div>
+    <div class="form-group">
+      <label for="productCategoryInput">productCategory :</label>
+      <input type="text" class="form-control" id="productCategoryInput">
+    </div>
+    <div class="form-group">
+      <label for="proudactDescInput">proudactDesc :</label>
+      <textarea type="text" class="form-control" id="proudactDescInput"></textarea>
+    </div>
+
+    <button id="mainButn" onclick="addProudact()" class=" btn btn-outline-info">Add Product</button>
+  </div>
+
+
+
+
+
+
+  <div class="container">
+
+    <input onkeyup="searchProduct(this.value)" class="form-control w-75 m-auto" type="text"
+      placeholder="Search Proudact">
+    <table class="table mt-4">
+      <thead>
+        <th>index</th>
+        <th>ProductName</th>
+        <th>ProductPrice</th>
+        <th>ProductCategory</th>
+        <th>ProductDesc</th>
+        <th>update</th>
+        <th>Delete</th>
+      </thead>
+
+      <tbody id="tableBody">
+
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
